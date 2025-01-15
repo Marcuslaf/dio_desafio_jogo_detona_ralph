@@ -1,38 +1,88 @@
-# dio_desafio_jogo_detona_ralph
-Desafio do Bootcamp da Dio encrementando melhorias no jogo Detona Ralph.
+# Detona Ralph | Wreck-It Ralph
 
-As principais alterações foram:
-Adicionado bestScore no state para acompanhar a melhor pontuação das 3 tentativas
-Modificada a função updateLives() para:
-Atualizar o bestScore quando necessário.
-Reiniciar apenas a rodada atual quando ainda há vidas.
-Modificada a função saveScore() para:
-Salvar apenas o melhor score das 3 tentativas.
-Verificar se o jogador já existe no ranking.
-Atualizar a pontuação apenas se o novo score for maior que o anterior.
+## Sobre o Projeto | About the Project
 
-Nova função resetRound() para:
-Reiniciar apenas os valores da rodada atual.
-Manter o número de vidas e o bestScore.
+### PT-BR
+Este é um jogo inspirado no personagem Detona Ralph, desenvolvido com HTML, CSS e JavaScript. O objetivo é acumular pontos enquanto desvia de inimigos e administra vidas. O jogo é uma ótima forma de prática para lógica de programação, manipulação de eventos e estilização com CSS.
 
-Modificada a função resetGame() para:
-Reiniciar todas as variáveis, incluindo vidas e bestScore.
-Chamar resetRound() para iniciar uma nova partida.
+### EN
+This is a game inspired by the character Wreck-It Ralph, developed with HTML, CSS, and JavaScript. The goal is to score points while avoiding enemies and managing lives. The game is an excellent way to practice programming logic, event handling, and CSS styling.
 
-Adicionada a flag canClick no state:
-Modificada a função randomSquare() para resetar a flag de clique:
-Modificada a função addListenerHitBox() para verificar a flag:
+---
 
-Adicionado reset da flag nas funções:
-resetRound()
-resetGame()
+## Tecnologias Usadas | Technologies Used
 
-Agora o jogo:
-Mantém registro do melhor score durante as 3 tentativas
-Só salva no ranking quando acabarem todas as vidas
-Salva apenas a maior pontuação conseguida nas 3 tentativas
-Atualiza o ranking apenas se o jogador superar sua própria pontuação anterior
-Só permite um clique válido por inimigo
-Reseta a possibilidade de clique quando um novo inimigo aparece
-Mantém todas as funcionalidades anteriores do ranking e vidas
-Previne que o jogador ganhe pontos extras clicando múltiplas vezes no mesmo quadrado
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+---
+
+## Como Jogar | How to Play
+
+### PT-BR
+1. Abra o jogo no navegador.
+2. Observe o painel com informações de tempo, pontuação e vidas.
+3. Desvie dos inimigos clicando nos espaços livres.
+4. O objetivo é marcar o maior número de pontos antes de o tempo acabar ou perder todas as vidas.
+
+### EN
+1. Open the game in your browser.
+2. Check the panel for time, score, and lives information.
+3. Avoid enemies by clicking on free spaces.
+4. The goal is to score as many points as possible before time runs out or lives are lost.
+
+---
+
+## Estrutura do Projeto | Project Structure
+
+```
+.
+├── index.html  # Arquivo principal HTML | Main HTML file
+├── src/
+│   ├── styles/
+│   │   ├── reset.css  # Estilização de reset | Reset styling
+│   │   └── main.css   # Estilos principais | Main styling
+│   ├── scripts/
+│   │   └── engine.js  # Lógica do jogo | Game logic
+│   └── images/
+│       └── player.png  # Imagem do jogador | Player image
+```
+
+---
+
+## Como Executar | How to Run
+
+### PT-BR
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/Marcuslaf/detona-ralph.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd detona-ralph
+   ```
+3. Abra o arquivo `index.html` em seu navegador.
+
+### EN
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Marcuslaf/detona-ralph.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd detona-ralph
+   ```
+3. Open the `index.html` file in your browser.
+
+---
+
+## Contribuição | Contribution
+
+### PT-BR
+Contribuições são bem-vindas! Se você encontrar um problema ou tiver uma sugestão, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+### EN
+Contributions are welcome! If you find an issue or have a suggestion, feel free to open an issue or submit a pull request.
+
+---
